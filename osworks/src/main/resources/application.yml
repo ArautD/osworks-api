@@ -2,8 +2,8 @@ spring:
   datasource:
 #    url: jdbc:postgresql://<Ip Da Maquina>:<Porta>/<Nome Do Banco De Dados>?useTimezone=true&serverTimezone=UTC&useLegacyDate
     url: jdbc:postgresql://localhost:5432/os_works?useTimezone=true&serverTimezone=UTC&useLegacyDate
-    username: postgres # Usuario
-    password: sna326411 # Senha
+    username:  # User
+    password:  # Senha
   jpa:
     show-sql: true
     hibernate:
@@ -26,3 +26,7 @@ logging:
         type: trace
   file:
     name: /logs/app.log
+
+jwt:
+  secret:
+  expiration: 10800000

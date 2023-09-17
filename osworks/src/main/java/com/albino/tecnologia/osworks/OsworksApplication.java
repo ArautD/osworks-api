@@ -9,7 +9,6 @@ public class OsworksApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OsworksApplication.class, args);
-		System.out.println(new BCryptPasswordEncoder().encode("senha123"));
 	}
 
 }
